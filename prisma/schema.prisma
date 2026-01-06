@@ -1,0 +1,80 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id              String         @id @default(uuid())
+  name            String
+  category        String
+  vintageYear     Int?
+  distilledYear   Int?
+  bottledYear     Int?
+  ageYears        Int?
+  abv             Float?
+  sizeMl          Int?
+  region          String?
+  country         String?
+  sweetness       String?
+  rating          Float?
+  featured        Boolean        @default(false)
+  manualScoreBoost Float         @default(0)
+  inStockOverride Boolean?
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  prices          PriceListing[]
+}
+
+model PriceListing {
+  id            String   @id @default(uuid())
+  productId     String
+  sourceId      String?
+  price         Float
+  currency      String
+  buyUrl        String?
+  inStock       Boolean  @default(true)
+  lastCheckedAt DateTime @default(now())
+  product       Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  source        Source?  @relation(fields: [sourceId], references: [id])
+}
+
+model Source {
+  id        String         @id @default(uuid())
+  name      String
+  type      String
+  url       String?
+  notes     String?
+  createdAt DateTime       @default(now())
+  prices    PriceListing[]
+}
+
+model ImportLog {
+  id         String   @id @default(uuid())
+  sourceName String
+  rows       Int?
+  createdAt  DateTime @default(now())
+  notes      String?
+}
+
+model PriceCheckLog {
+  id         String   @id @default(uuid())
+  sourceName String
+  rows       Int?
+  createdAt  DateTime @default(now())
+  notes      String?
+}
+
+model RankingConfig {
+  id                  String   @id @default(uuid())
+  exactWeight         Float
+  ageWeight           Float
+  ratingWeight        Float
+  availabilityWeight  Float
+  budgetWeight        Float
+  featuredWeight      Float
+  updatedAt           DateTime @updatedAt
+}

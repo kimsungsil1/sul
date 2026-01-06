@@ -1,0 +1,248 @@
+{
+  "products": [
+    {
+      "name": "Chateau Cos d'Estournel",
+      "category": "Wine",
+      "vintageYear": 1989,
+      "abv": 13.5,
+      "sizeMl": 750,
+      "region": "Saint-Estephe, Bordeaux",
+      "country": "France",
+      "sweetness": "dry",
+      "rating": 96,
+      "featured": true,
+      "prices": [
+        {
+          "price": 320,
+          "currency": "USD",
+          "buyUrl": "https://example.com/cos-1989",
+          "inStock": true,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Chateau Margaux",
+      "category": "Wine",
+      "vintageYear": 1995,
+      "abv": 13.0,
+      "sizeMl": 750,
+      "region": "Margaux, Bordeaux",
+      "country": "France",
+      "sweetness": "dry",
+      "rating": 95,
+      "prices": [
+        {
+          "price": 540,
+          "currency": "USD",
+          "buyUrl": "https://example.com/margaux-1995",
+          "inStock": true,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Vintage Port 1989",
+      "category": "Wine",
+      "vintageYear": 1989,
+      "abv": 20,
+      "sizeMl": 750,
+      "region": "Douro",
+      "country": "Portugal",
+      "sweetness": "sweet",
+      "rating": 94,
+      "prices": [
+        {
+          "price": 150,
+          "currency": "USD",
+          "buyUrl": "https://example.com/port-1989",
+          "inStock": false,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Dom Perignon",
+      "category": "Champagne",
+      "vintageYear": 2000,
+      "abv": 12.5,
+      "sizeMl": 750,
+      "region": "Champagne",
+      "country": "France",
+      "sweetness": "dry",
+      "rating": 95,
+      "featured": true,
+      "prices": [
+        {
+          "price": 220,
+          "currency": "USD",
+          "buyUrl": "https://example.com/dom-2000",
+          "inStock": true,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Glenfiddich",
+      "category": "Whisky",
+      "distilledYear": 1989,
+      "bottledYear": 2010,
+      "ageYears": 21,
+      "abv": 43,
+      "sizeMl": 700,
+      "region": "Speyside",
+      "country": "Scotland",
+      "rating": 91,
+      "prices": [
+        {
+          "price": 180,
+          "currency": "USD",
+          "buyUrl": "https://example.com/glenfiddich-1989",
+          "inStock": true,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Macallan",
+      "category": "Whisky",
+      "distilledYear": 1995,
+      "bottledYear": 2013,
+      "ageYears": 18,
+      "abv": 43,
+      "sizeMl": 700,
+      "region": "Speyside",
+      "country": "Scotland",
+      "rating": 93,
+      "prices": [
+        {
+          "price": 260,
+          "currency": "USD",
+          "buyUrl": "https://example.com/macallan-1995",
+          "inStock": true,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Armagnac 1989",
+      "category": "Brandy",
+      "distilledYear": 1989,
+      "ageYears": 20,
+      "abv": 40,
+      "sizeMl": 700,
+      "region": "Bas-Armagnac",
+      "country": "France",
+      "rating": 90,
+      "prices": [
+        {
+          "price": 140,
+          "currency": "USD",
+          "buyUrl": "https://example.com/armagnac-1989",
+          "inStock": true,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Cognac XO",
+      "category": "Brandy",
+      "bottledYear": 1995,
+      "ageYears": 15,
+      "abv": 40,
+      "sizeMl": 700,
+      "region": "Cognac",
+      "country": "France",
+      "rating": 89,
+      "prices": [
+        {
+          "price": 130,
+          "currency": "USD",
+          "buyUrl": "https://example.com/cognac-xo-1995",
+          "inStock": true,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Caroni",
+      "category": "Rum",
+      "distilledYear": 2000,
+      "ageYears": 18,
+      "abv": 55,
+      "sizeMl": 700,
+      "region": "Trinidad",
+      "country": "Trinidad and Tobago",
+      "rating": 92,
+      "prices": [
+        {
+          "price": 210,
+          "currency": "USD",
+          "buyUrl": "https://example.com/caroni-2000",
+          "inStock": true,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Yamazaki",
+      "category": "Whisky",
+      "distilledYear": 2000,
+      "ageYears": 12,
+      "abv": 43,
+      "sizeMl": 700,
+      "region": "Osaka",
+      "country": "Japan",
+      "rating": 90,
+      "prices": [
+        {
+          "price": 140,
+          "currency": "USD",
+          "buyUrl": "https://example.com/yamazaki-2000",
+          "inStock": false,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Barolo Riserva",
+      "category": "Wine",
+      "vintageYear": 2000,
+      "abv": 14,
+      "sizeMl": 750,
+      "region": "Piedmont",
+      "country": "Italy",
+      "sweetness": "dry",
+      "rating": 93,
+      "prices": [
+        {
+          "price": 95,
+          "currency": "USD",
+          "buyUrl": "https://example.com/barolo-2000",
+          "inStock": true,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    },
+    {
+      "name": "Sauternes 1990",
+      "category": "Wine",
+      "vintageYear": 1990,
+      "abv": 13.5,
+      "sizeMl": 750,
+      "region": "Sauternes",
+      "country": "France",
+      "sweetness": "sweet",
+      "rating": 92,
+      "prices": [
+        {
+          "price": 120,
+          "currency": "USD",
+          "buyUrl": "https://example.com/sauternes-1990",
+          "inStock": true,
+          "lastCheckedAt": "2024-08-01"
+        }
+      ]
+    }
+  ]
+}
